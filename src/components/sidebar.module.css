@@ -1,6 +1,15 @@
-.sidebar{
-    background: #50ffff;
-    margin: 0;
-    padding: 0;
-    width:200px;
+.sidebar {
+  background-color: #50ffff;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 100%;
+}
+
+.opened {
+  background-color: #202020;
+}
+
+.closed {
+  background-color: #ff0000;
 }

@@ -1,5 +1,6 @@
 import React from "react"
-import contentStyle from "./content.module.css"
+
+var contentStyle = require("./content.module.css")
 
 export default function Content() {
   return (
