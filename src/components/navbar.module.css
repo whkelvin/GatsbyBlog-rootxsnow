@@ -1,6 +1,7 @@
 .navbar {
-  background-color: var(--nord1);
-  height: 100px;
-  margin: 0;
+  background-color: var(--nord0);
+  height: 80px;
+  margin: 10px 10px 0px 10px;
   padding: 0;
+  border-radius: 6px;
 }

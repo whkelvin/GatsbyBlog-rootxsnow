@@ -1,15 +1,15 @@
 .sidebar {
   background-color: #50ffff;
-  margin: 0;
+  margin: 10px 0px 10px 10px;
   padding: 0;
-  width: 200px;
-  height: 100%;
+  width: 300px;
+  border-radius: 6px;
 }
 
 .opened {
-  background-color: #202020;
+  background-color: var(--nord0);
 }
 
 .closed {
-  background-color: #ff0000;
+  background-color: var(--nord1);
 }
