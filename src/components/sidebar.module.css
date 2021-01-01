@@ -1,19 +1,45 @@
 .sidebar {
   background-color: var(--nord0);
-  margin: 10px 0px 10px 10px;
   padding: 0;
   border-radius: 6px;
-  transition: width 0.5s ease-in-out;
 }
 
-.opened {
-  width: 300px;
+
+/*screen is smaller than break size*/
+@media (max-width: var(--mobile-break-width)) {
+  .sidebar {
+    margin: 10px 10px 10px 10px;
+  }
+  .opened {
+    height: 300px;
+  }
+
+  .closed {
+    height:0px;
+    margin: 10px 0px 10px 0px;
+    padding:0;
+  }
 }
 
-.closed {
-  width: 0px;
-  margin: 10px 0px 10px 0px;
-  padding:0;
+/*screen is bigger than break size*/
+@media (min-width: var(--mobile-break-width)) {
+  .sidebar {
+    margin: 10px 0px 10px 10px;
+    transition: width 0.5s ease-in-out;
+  }
+
+  .opened {
+    width: 300px;
+  }
+
+  .closed {
+    width: 0px;
+    margin: 10px 0px 10px 0px;
+    padding:0;
+  }
+
 }
+
+
 
 
