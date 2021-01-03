@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Sidebar from "../components/sidebar";
 import Content from "../components/content";
-var wrapperStyle = require("./wrapper.module.css");
+var wrapperStyle = require("./wrapper.module.scss");
 
 class Layout extends React.Component {
   constructor(props) {
@@ -15,12 +15,13 @@ class Layout extends React.Component {
     return (
       <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
         <Navbar toggleSidebar={this.toggleSidebar}></Navbar>
-        <div className={wrapperStyle.wrapper}></div>
+        <div className={wrapperStyle.wrapper}>
+            <Sidebar open={this.state.sidebarOpened}></Sidebar>
+            <Content></Content>
+        </div>
       </div>
     );
   }
-//<Sidebar open={this.state.sidebarOpened}></Sidebar>
-//           <Content></Content>
 
   toggleSidebar() {
     this.setState(

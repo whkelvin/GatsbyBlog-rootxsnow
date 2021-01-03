@@ -1,5 +1,5 @@
 import React from "react";
-var sidebarStyle = require("./sidebar.module.css");
+var sidebarStyle = require("./sidebar.module.scss");
 
 class Sidebar extends React.Component {
   render() {

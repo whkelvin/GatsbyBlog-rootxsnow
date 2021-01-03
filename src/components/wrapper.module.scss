@@ -1,3 +1,5 @@
+@use "./../styles/variables" as var;
+
 .wrapper {
   flex-grow: 1;
   display: flex;
@@ -5,21 +7,18 @@
 }
 
 .test{
-  background-color: black;
   height:20px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: var.$mobile-breakpoint) {
   .wrapper {
     flex-direction: column;
-    background-color:white;
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: var.$mobile-breakpoint) {
   .wrapper {
     flex-direction: row;
-    background-color:black;
   }
 }
 

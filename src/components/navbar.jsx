@@ -1,5 +1,5 @@
 import React from "react";
-var navbarStyle = require("./navbar.module.css");
+var navbarStyle = require("./navbar.module.scss");
 
 class Navbar extends React.Component {
   render() {

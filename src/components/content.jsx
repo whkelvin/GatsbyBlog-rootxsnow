@@ -1,5 +1,5 @@
 import React from "react"
-var contentStyle = require("./content.module.css")
+var contentStyle = require("./content.module.scss")
 
 class Content extends React.Component{
     render(){

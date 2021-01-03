@@ -1,14 +1,17 @@
+@use "./../styles/variables" as var;
+
 .sidebar {
-  background-color: var(--nord0);
+  background-color: var.$nord0;
   padding: 0;
   border-radius: 6px;
 }
 
 
 /*screen is smaller than break size*/
-@media (max-width: var(--mobile-break-width)) {
+@media (max-width: var.$mobile-breakpoint) {
   .sidebar {
     margin: 10px 10px 10px 10px;
+    transition: height 0.5s ease-in-out;
   }
   .opened {
     height: 300px;
@@ -16,13 +19,13 @@
 
   .closed {
     height:0px;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 10px 10px 10px;
     padding:0;
   }
 }
 
 /*screen is bigger than break size*/
-@media (min-width: var(--mobile-break-width)) {
+@media (min-width: var.$mobile-breakpoint) {
   .sidebar {
     margin: 10px 0px 10px 10px;
     transition: width 0.5s ease-in-out;
