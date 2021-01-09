@@ -9,7 +9,7 @@ class Sidebar extends React.Component {
           sidebarStyle.sidebar,
           this.props.open ? sidebarStyle.opened : sidebarStyle.closed,
         ].join(" ")}
-      > sidebar 
+      >
       </div>
     );
   }

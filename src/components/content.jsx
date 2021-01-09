@@ -1,15 +1,30 @@
-import React from "react"
-var contentStyle = require("./content.module.scss")
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
-class Content extends React.Component{
-    render(){
-        return (
-            <div className={contentStyle.content}>
-                hello
-            </div>
-        )
-    }
+var contentStyle = require("./content.module.scss");
 
+export default function Content() {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        allMarkdownRemark(
+          filter: { id: { eq: "d4a3342b-13da-54b0-abf3-c464d098b3b6" } }
+        ) {
+          nodes {
+            html
+          }
+        }
+      }
+    `
+  );
+
+  return (
+    <div className={contentStyle.content}>
+      <div className={contentStyle.mdContent}
+        dangerouslySetInnerHTML={{
+          __html: data.allMarkdownRemark.nodes[0].html,
+        }}
+      ></div>
+    </div>
+  );
 }
-
-export default Content;

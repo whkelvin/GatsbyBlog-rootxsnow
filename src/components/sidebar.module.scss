@@ -11,16 +11,15 @@
 @media (max-width: var.$mobile-breakpoint) {
   .sidebar {
     margin: 10px 10px 10px 10px;
-    transition: height 0.5s ease-in-out;
   }
   .opened {
     height: 300px;
+    min-height: 300px;
   }
 
   .closed {
     height:0px;
-    margin: 10px 10px 10px 10px;
-    padding:0;
+    margin: 0px 0px 0px 0px;
   }
 }
 
@@ -28,17 +27,16 @@
 @media (min-width: var.$mobile-breakpoint) {
   .sidebar {
     margin: 10px 0px 10px 10px;
-    transition: width 0.5s ease-in-out;
   }
 
   .opened {
     width: 300px;
+    min-width:300px;
   }
 
   .closed {
     width: 0px;
     margin: 10px 0px 10px 0px;
-    padding:0;
   }
 
 }
