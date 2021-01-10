@@ -32,6 +32,10 @@
     color: var.$nord4;
 }
 
+.name::selection{
+    background-color: #00000000;
+}
+
 .domain {
     color: var.$nord3;
     text-align: right;

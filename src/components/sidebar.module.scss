@@ -6,7 +6,18 @@
   border-radius: 6px;
 }
 
+.hideSidebarContent {
+   visibility: hidden; 
+}
 
+.showSidebarContent {
+  visibility: visible;
+}
+
+.sidebarContent {
+  padding: 20px;
+  color: var.$nord4;
+}
 /*screen is smaller than break size*/
 @media (max-width: var.$mobile-breakpoint) {
   .sidebar {

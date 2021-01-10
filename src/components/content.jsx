@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 var contentStyle = require("./content.module.scss");
 
-export default function Content() {
+export default function Content({children}) {
   const data = useStaticQuery(
     graphql`
       query {
@@ -20,11 +20,14 @@ export default function Content() {
 
   return (
     <div className={contentStyle.content}>
-      <div className={contentStyle.mdContent}
-        dangerouslySetInnerHTML={{
-          __html: data.allMarkdownRemark.nodes[0].html,
-        }}
-      ></div>
+        {children}
     </div>
   );
 }
+
+//<div className={contentStyle.mdContent}
+//        dangerouslySetInnerHTML={{
+//          __html: data.allMarkdownRemark.nodes[0].html,
+//        }}
+//      >
+

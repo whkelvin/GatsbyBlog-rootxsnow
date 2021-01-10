@@ -10,6 +10,10 @@ class Sidebar extends React.Component {
           this.props.open ? sidebarStyle.opened : sidebarStyle.closed,
         ].join(" ")}
       >
+          <div className={[sidebarStyle.sidebarContent, 
+                            this.props.open ? sidebarStyle.showSidebarContent : sidebarStyle.hideSidebarContent].join(" ")}>
+            施工中
+          </div>
       </div>
     );
   }

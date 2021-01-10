@@ -17,7 +17,7 @@ class Layout extends React.Component {
         <Navbar toggleSidebar={this.toggleSidebar}></Navbar>
         <div className={wrapperStyle.wrapper}>
             <Sidebar open={this.state.sidebarOpened}></Sidebar>
-            <Content></Content>
+            <Content>{this.props.children}</Content>
         </div>
       </div>
     );

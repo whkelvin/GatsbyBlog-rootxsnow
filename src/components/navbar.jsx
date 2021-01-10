@@ -9,8 +9,8 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className={navbarStyle.navbar}>
-        <div className={navbarStyle.iconWrapper} onClick={this.props.toggleSidebar}>
-            <FaBars className={navbarStyle.icon}/>
+        <div className={navbarStyle.iconWrapper} >
+            <FaBars className={navbarStyle.icon} onClick={this.props.toggleSidebar}/>
         </div>
 
         <div className={navbarStyle.nameTag}>
