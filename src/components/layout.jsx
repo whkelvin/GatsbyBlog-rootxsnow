@@ -7,7 +7,7 @@ var wrapperStyle = require("./wrapper.module.scss");
 class Layout extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { sidebarOpened: true };
+    this.state = { sidebarOpened: false };
     this.toggleSidebar = this.toggleSidebar.bind(this);
   }
 
