@@ -19,10 +19,9 @@ export default function IndexPage() {
     `
     );
 
-    return  <div>hello</div>;
-//<div className={contentStyle.mdContent}
-//                  dangerouslySetInnerHTML={{__html: data.allMarkdownRemark.nodes[0].html}}>
-//            </div>;
+    return  <div className={contentStyle.mdContent}
+                  dangerouslySetInnerHTML={{__html: data.allMarkdownRemark.nodes[0].html}}>
+            </div>;
 
 }
 
