@@ -1,3 +1,13 @@
+---
+date: "2021-01-11"
+title: "My Ubuntu Setup"
+group: Ubuntu Configuration Tutorial
+title-tc: "我的Ubuntu設置"
+group-tc: "Ubuntu設置教學"
+order: "1"
+link: "/MyUbuntuSetUp"
+---
+
 <a name="hello-world"></a>
 
 # Hello World!
