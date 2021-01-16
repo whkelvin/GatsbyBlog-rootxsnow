@@ -33,6 +33,9 @@ export default function Sidebar(props) {
                                 : sidebarStyle.hideSidebarContent,
                         ].join(" ")}
                     >
+                        <div className={sidebarStyle.sidebarHeading}>
+                            文章列表
+                        </div>
                         <ul
                             style={{
                                 display: "flex",

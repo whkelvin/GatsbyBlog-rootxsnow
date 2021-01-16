@@ -7,7 +7,7 @@
 }
 
 .hideSidebarContent {
-   visibility: hidden; 
+  visibility: hidden;
 }
 
 .showSidebarContent {
@@ -15,8 +15,16 @@
 }
 
 .sidebarContent {
-  padding: 20px;
+  padding: 0px;
   color: var.$nord4;
+}
+
+.sidebarHeading {
+  background-color: var.$nord10;
+  margin-top: 30px;
+  padding-left: 10px;
+  font-family: "Rubik";
+  font-weight: bold;
 }
 /*screen is smaller than break size*/
 @media (max-width: var.$mobile-breakpoint) {
@@ -29,7 +37,7 @@
   }
 
   .closed {
-    height:0px;
+    height: 0px;
     margin: 0px 0px 0px 0px;
   }
 }
@@ -42,16 +50,11 @@
 
   .opened {
     width: 300px;
-    min-width:300px;
+    min-width: 300px;
   }
 
   .closed {
     width: 0px;
     margin: 10px 0px 10px 0px;
   }
-
 }
-
-
-
-
