@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 var contentStyle = require("../components/content.module.scss");
 
-export default function GnomeDesktopEnvironment({ data }) {
+export default function gnomeDesktopEnvironment({ data }) {
     console.log(data);
     return  <div className={contentStyle.mdContent}
                   dangerouslySetInnerHTML={{__html: data.allMarkdownRemark.edges[0].node.html}}>
@@ -12,7 +12,7 @@ export default function GnomeDesktopEnvironment({ data }) {
 
 export const query = graphql`
     query {
-      allMarkdownRemark(filter: {frontmatter: {link: {eq: "/GnomeDesktopEnvironment"}}}) {
+      allMarkdownRemark(filter: {frontmatter: {link: {eq: "/gnomeDesktopEnvironment"}}}) {
         edges {
           node {
             html

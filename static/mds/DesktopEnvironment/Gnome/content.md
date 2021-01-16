@@ -5,7 +5,7 @@ group: "Desktop Environment"
 title-tc: "Gnome 桌面環境"
 group-tc: "桌面環境"
 order: "1"
-link: "/GnomeDesktopEnvironment"
+link: "/gnomeDesktopEnvironment"
 ---
 
 # 桌面環境 Desktop Environment
