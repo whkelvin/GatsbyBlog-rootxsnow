@@ -11,27 +11,6 @@
   font-family: "Rubik";
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background-color: var.$nord0;
-  border-radius: 6px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background-color: var.$nord3;
-  border-radius: 6px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background-color: var.$nord9;
-}
-
 @media (max-width: var.$mobile-breakpoint) {
   .mdContent {
     padding: 50px 5vh 20px 5vh;
@@ -40,7 +19,7 @@
 
 @media (min-width: var.$mobile-breakpoint) {
   .mdContent {
-    padding: 50px 25vh 20px 25vh;
+    padding: 50px 20vh 20px 20vh;
     max-width: 800px;
     margin: 0 auto;
   }

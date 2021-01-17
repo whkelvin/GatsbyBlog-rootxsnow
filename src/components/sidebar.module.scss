@@ -17,15 +17,41 @@
 .sidebarContent {
   padding: 0px;
   color: var.$nord4;
+  flex-direction: column;
+  font-family: "Rubik";
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .sidebarHeading {
   background-color: var.$nord10;
-  margin-top: 30px;
-  padding-left: 10px;
+  padding-left: 20px;
   font-family: "Rubik";
   font-weight: bold;
 }
+
+.sidebarList {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarListItem {
+  padding-left: 20px;
+  padding-top: 10px;
+  color: var.$nord4;
+  text-decoration: none;
+  font-weight: normal;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.sidebarListItem:hover {
+  color: var.$nord9;
+}
+
 /*screen is smaller than break size*/
 @media (max-width: var.$mobile-breakpoint) {
   .sidebar {
@@ -39,6 +65,10 @@
   .closed {
     height: 0px;
     margin: 0px 0px 0px 0px;
+  }
+
+  .sidebarHeading {
+    margin-top: 20px;
   }
 }
 
@@ -56,5 +86,9 @@
   .closed {
     width: 0px;
     margin: 10px 0px 10px 0px;
+  }
+
+  .sidebarHeading {
+    margin-top: 30px;
   }
 }
