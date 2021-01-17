@@ -1,16 +1,19 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Content from "../components/content";
 var contentStyle = require("../components/content.module.scss");
 
 export default function myUbuntuSetUp({ data }) {
     console.log(data);
     return (
-        <div
-            className={contentStyle.mdContent}
-            dangerouslySetInnerHTML={{
-                __html: data.allMarkdownRemark.edges[0].node.html,
-            }}
-        ></div>
+        <Content>
+            <div
+                className={contentStyle.mdContent}
+                dangerouslySetInnerHTML={{
+                    __html: data.allMarkdownRemark.edges[0].node.html,
+                }}
+            ></div>
+        </Content>
     );
 }
 
