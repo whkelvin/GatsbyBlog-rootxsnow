@@ -22,13 +22,15 @@ export default function Sidebar(props) {
                 <div
                     className={[
                         sidebarStyle.sidebar,
-                        props.open ? sidebarStyle.opened : sidebarStyle.closed,
+                        props.isOpen
+                            ? sidebarStyle.opened
+                            : sidebarStyle.closed,
                     ].join(" ")}
                 >
                     <div
                         className={[
                             sidebarStyle.sidebarContent,
-                            props.open
+                            props.isOpen
                                 ? sidebarStyle.showSidebarContent
                                 : sidebarStyle.hideSidebarContent,
                         ].join(" ")}
@@ -41,6 +43,7 @@ export default function Sidebar(props) {
                                 <Link
                                     className={sidebarStyle.sidebarListItem}
                                     to={link.link}
+                                    onClick={props.closeSidebar}
                                 >
                                     {link.name}
                                 </Link>

@@ -8,6 +8,7 @@ class Layout extends React.Component {
         super(props);
         this.state = { sidebarOpened: false };
         this.toggleSidebar = this.toggleSidebar.bind(this);
+        this.closeSidebar = this.closeSidebar.bind(this);
     }
 
     render() {
@@ -21,7 +22,10 @@ class Layout extends React.Component {
             >
                 <Navbar toggleSidebar={this.toggleSidebar}></Navbar>
                 <div className={wrapperStyle.wrapper}>
-                    <Sidebar open={this.state.sidebarOpened}></Sidebar>
+                    <Sidebar
+                        isOpen={this.state.sidebarOpened}
+                        closeSidebar={this.closeSidebar}
+                    ></Sidebar>
                     {this.props.children}
                 </div>
             </div>
@@ -31,6 +35,15 @@ class Layout extends React.Component {
     toggleSidebar() {
         this.setState(
             (prevState) => ({ sidebarOpened: !prevState.sidebarOpened }),
+            () => {
+                console.log(this.state.sidebarOpened);
+            }
+        );
+    }
+
+    closeSidebar() {
+        this.setState(
+            (prevState) => ({ sidebarOpened: false }),
             () => {
                 console.log(this.state.sidebarOpened);
             }

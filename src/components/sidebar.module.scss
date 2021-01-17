@@ -63,8 +63,9 @@
   }
 
   .closed {
+    transition: height 2s, margin 2s;
     height: 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 10px 0px 10px;
   }
 
   .sidebarHeading {
@@ -86,6 +87,7 @@
   .closed {
     width: 0px;
     margin: 10px 0px 10px 0px;
+    transition: width 2s;
   }
 
   .sidebarHeading {
