@@ -12,7 +12,7 @@ export default function Sidebar(props) {
                         siteMetadata {
                             menuLinks {
                                 link
-                                name
+                                nameTC
                             }
                         }
                     }
@@ -45,7 +45,7 @@ export default function Sidebar(props) {
                                     to={link.link}
                                     onClick={props.closeSidebar}
                                 >
-                                    {link.name}
+                                    {link.nameTC}
                                 </Link>
                             ))}
                         </div>

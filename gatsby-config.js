@@ -50,15 +50,21 @@ module.exports = {
         },
     ],
     siteMetadata: {
-        title: "Gatsby Default Starter",
         menuLinks: [
             {
                 name: "MyUbuntuSetup",
+                nameTC: "我的Ubuntu設置",
                 link: "/myUbuntuSetup",
             },
             {
                 name: "Gnome",
+                nameTC: "Gnome 桌面環境",
                 link: "/gnomeDesktopEnvironment",
+            },
+            {
+                name: "Terminal Emulator",
+                nameTC: "終端機介紹",
+                link: "/terminalEmulator",
             },
         ],
     },
