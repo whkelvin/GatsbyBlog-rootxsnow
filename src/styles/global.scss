@@ -17,23 +17,43 @@ body {
   height: 100%;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background-color: var.$nord0;
-  border-radius: 6px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background-color: var.$nord3;
-  border-radius: 6px;
-}
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background-color: var.$nord9;
+}
+
+@media (max-width: var.$mobile-breakpoint) {
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: var.$nord3;
+    border-radius: 12px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: var.$nord0;
+    border-radius: 12px;
+  }
+}
+
+@media (min-width: var.$mobile-breakpoint) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: var.$nord3;
+    border-radius: 6px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: var.$nord0;
+    border-radius: 6px;
+  }
 }
