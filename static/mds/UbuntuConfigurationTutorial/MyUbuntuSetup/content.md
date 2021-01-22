@@ -23,7 +23,7 @@ link: "/myUbuntuSetUp"
 -   [作業系統 Operating System](#operating-system)
 -   [Nord 主題 Nord Theme](#nord-theme)
 -   [桌面背景 Wallpaper](#wallpaper)
--   [桌面環境和視窗管理員 Desktop Environment and Desktop Manager](#desktop-environment-and-window-manager)
+-   [桌面環境和視窗管理員 Desktop Environment and Window Manager](#desktop-environment-and-window-manager)
 -   [虛擬終端 Terminal Emulator](#terminal-emulator)
 
 <a name="operating-system"></a>
@@ -58,9 +58,9 @@ Mac & WSL - 有一些 Terminal Emulator 裡的程式是有支援的， 請到樓
 
 <a name="desktop-environment-and-window-manager"></a>
 
-# 桌面環境和視窗管理員 Desktop Environment and Desktop Manager
+# 桌面環境和視窗管理員 Desktop Environment and Window Manager
 
-如果你還不知道什麼是桌面環境，建議你先看這篇[Gnome 桌面環境](/gnomeDesktopEnvironment)，如果你跟自己過不去，可以直接看這篇 TODO!
+如果你還不知道什麼是桌面環境，建議你先看這篇[Gnome 桌面環境](/gnomeDesktopEnvironment)，如果你跟自己過不去，可以直接看這篇[i3wm 視窗管理員(TODO)]! 上面的圖片裡用的是[i3-gaps](https://github.com/Airblader/i3)視窗管理員.
 
 <a name="terminal-emulator"></a>
 
