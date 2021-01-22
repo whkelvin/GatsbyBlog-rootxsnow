@@ -17,7 +17,7 @@ Terminal（Terminal Emulator）是一個你可以對你的電腦上下其手的�
 
 每個 Terminal 裡面都住了一個 Shell，這個 Shell 就是實際去執行你的指令的傢伙。有寫過 Python 的可能知道，Python 也有一個 Python Shell，不過 Python Shell 應該只能接受 Python 的指令。
 
-而 Prompt 就是每一行行首的"使用者名稱@主機名"那一串。每一個 Shell 都有不一樣的 Prompt。
+而 Prompt 就是每一行行首的"使用者名稱@主機名"那一串。每一個 Shell 的 Prompt 都長的不一樣，不過大部份都可以改成你喜歡的樣子。
 
 Ubuntu 20.04 預設的 Terminal 是 Gnome Terminal， 而預設的 Shell 是 Bash。
 Mac OS 裡也有 Mac Terminal， 預設的 Shell 也是 Bash，不過好像似乎最近有換。
