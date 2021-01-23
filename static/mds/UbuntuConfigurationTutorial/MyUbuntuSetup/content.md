@@ -20,11 +20,11 @@ link: "/myUbuntuSetUp"
 
 各位看到上面兩張圖就手癢的同學你們好！我絕對不會和你們說我在 Dcard 上發文發現有了一個小粉絲後， 就迫不及待加興高采烈的跑來寫一篇新手+懶人向教學文， 順便介紹一下我的 set up。那就廢話不多說先上 TOC 囉。
 
--   [作業系統 Operating System](#operating-system)
--   [Nord 主題 Nord Theme](#nord-theme)
--   [桌面背景 Wallpaper](#wallpaper)
--   [桌面環境和視窗管理員 Desktop Environment and Window Manager](#desktop-environment-and-window-manager)
--   [虛擬終端 Terminal Emulator](#terminal-emulator)
+- [作業系統 Operating System](#operating-system)
+- [Nord 主題 Nord Theme](#nord-theme)
+- [桌面背景 Wallpaper](#wallpaper)
+- [桌面環境和視窗管理員 Desktop Environment and Window Manager](#desktop-environment-and-window-manager)
+- [虛擬終端 Terminal Emulator](#terminal-emulator)
 
 <a name="operating-system"></a>
 
@@ -70,11 +70,11 @@ Mac & WSL - 有一些 Terminal Emulator 裡的程式是有支援的， 請到樓
 
 下列是所有出現在上圖的酷東西:
 
--   [Alacritty: TODO](): 我目前用的 Terminal
--   [Fish: TODO]():我目前用的 Shell
--   [Powerline: TODO](): 左上角 Terminal 裡輸入指令前面的那個藍色箭頭酷東西
--   [neofetch: TODO](): 左上角 Terminal 顯示 Ubuntu 的 Logo 的程式
--   [cmatrix & unimatrix: TODO](): 右上角駭客任務裡的動圖程式
--   [cava: TODO]():右下角的音樂動態條狀圖
+- [Alacritty: TODO](): 我目前用的 Terminal, 新手可以先看這篇[Gnome 終端主題](/gnomeTerminal)
+- [Fish: TODO]():我目前用的 Shell
+- [Powerline: TODO](): 左上角 Terminal 裡輸入指令前面的那個藍色箭頭酷東西
+- [neofetch: TODO](): 左上角 Terminal 顯示 Ubuntu 的 Logo 的程式
+- [cmatrix & unimatrix: TODO](): 右上角駭客任務裡的動圖程式
+- [cava: TODO]():右下角的音樂動態條狀圖
 
 左下是我的檔案總管, 可以去看[Gnome 桌面環境](/gnomeDesktopEnvironment)。

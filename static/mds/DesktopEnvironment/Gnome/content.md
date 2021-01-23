@@ -47,22 +47,27 @@ gnome-tweaks 是一個提供預設的設定裡沒有的選項的設定程式，�
 
 `sudo apt install gnome-tweaks`
 
--   apt 是 Ubuntu 的 package manager， 有點類似 Google Play 或 App Store
--   sudo 是一個讓你在 terminal 暫時提高權限的指令。
+- apt 是 Ubuntu 的 package manager， 有點類似 Google Play 或 App Store
+- sudo 是一個讓你在 terminal 暫時提高權限的指令。
 
 ![](./tweaks.png)
+
 打開 tweaks 之後可以到 Appearance->Themes->Application 選擇你喜歡的主題。
 
 如果想要 nord 的顏色的話， 可以到[這裡](https://www.gnome-look.org/p/1267246/)下載（我選 nordic-darker， 你可以選你喜歡的）。下載下來的檔案解壓縮之後放到`~/.themes` 裡。
 
 **注意**
 
--   `.themes`這個資料夾不存在的話你會需要建一個新的資料夾，而所有檔名是`.`開始的都會被藏起來。在 Files 裡記得顯示隱藏的檔案。
+- `.themes`這個資料夾不存在的話你會需要建一個新的資料夾，而所有檔名是`.`開始的都會被藏起來。在 Files 裡記得顯示隱藏的檔案。
 
 ![](./show_hidden.png)
+
 我的`~/.themes`長這樣。
+
 ![](./theme_folder.png)
+
 然後從重新打開 tweaks->Appearance->Themes->Application 就應該可以看到新的主題啦。
+
 ![](./tweak_nordic.png)
 
 <a name="icon-theme"></a>
@@ -75,9 +80,9 @@ gnome-tweaks 是一個提供預設的設定裡沒有的選項的設定程式，�
 
 **注意:**
 
--   **`.icons`這個資料夾不存在的話你會需要建一個新的資料夾，而所有檔名是`.`開始的都會被藏起來。在 Files 裡記得顯示隱藏的檔案。**
+- **`.icons`這個資料夾不存在的話你會需要建一個新的資料夾，而所有檔名是`.`開始的都會被藏起來。在 Files 裡記得顯示隱藏的檔案。**
 
--   **我解壓縮完的時候發現要把解出來的檔案夾裡的檔案夾貼到`~/.icons`才行。**
+- **我解壓縮完的時候發現要把解出來的檔案夾裡的檔案夾貼到`~/.icons`才行。**
 
 <a name="dash-to-dock"></a>
 
@@ -88,7 +93,7 @@ gnome-tweaks 是一個提供預設的設定裡沒有的選項的設定程式，�
 
 **注意:**
 
--   小心不要不小心在 dconf-editor 改到不該改的東西，不然電腦不理你了不要怪我。
+- 小心不要不小心在 dconf-editor 改到不該改的東西，不然電腦不理你了不要怪我。
 
 安裝 dconf-editor
 
